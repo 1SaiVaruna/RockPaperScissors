@@ -91,6 +91,9 @@
                             Console.WriteLine("INVALID ENTRY. TRY AGAIN");
                             break;
                     }
+
+                    Console.WriteLine("\n\nSCORES:\tPLAYER:\t{0}\tCPU:\t{1}", scorePlayer, scoreCPU);
+
                 }
 
             }
