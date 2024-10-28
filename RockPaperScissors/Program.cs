@@ -23,6 +23,20 @@
                     Random random = new Random();
                     randomInt = random.Next(1, 4);
 
+                    while (true)
+                    {
+                        Console.Write("Choose between ROCK, PAPER and SCISSORS: ");
+                        inputPlayer = Console.ReadLine().ToUpper();
+
+                        if (inputPlayer == "ROCK" || inputPlayer == "PAPER" || inputPlayer == "SCISSORS")
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("INVALID INPUT. PLEASE ENTER ROCK, PAPER or SCISSORS.\n");
+                        }
+                    }
 
                     switch (randomInt)
                     {
@@ -85,10 +99,6 @@
                             {
                                 Console.WriteLine("DRAW!\n\n");
                             }
-                            break;
-
-                        default:
-                            Console.WriteLine("INVALID ENTRY. TRY AGAIN");
                             break;
                     }
 
