@@ -93,9 +93,21 @@
                     }
 
                     Console.WriteLine("\n\nSCORES:\tPLAYER:\t{0}\tCPU:\t{1}", scorePlayer, scoreCPU);
-
                 }
 
+                if (scorePlayer == 3)
+                {
+                    Console.WriteLine("Player WON!");
+                }
+                else if (scoreCPU == 3)
+                {
+                    Console.WriteLine("CPU WON!");
+                }
+
+                Console.WriteLine("WOULD YOU LIKE TO PLAY AGAIN (Y/N)");
+                string loop = Console.ReadLine();
+                playAgain = loop == "y";
+                if (playAgain) Console.Clear();
             }
         }
     }
