@@ -21,6 +21,25 @@
 
                 Random random = new Random();
                 randomInt = random.Next(1, 4);
+
+
+                switch(randomInt)
+                {
+                    case 1: 
+                        inputCPU = "ROCK";
+                        Console.WriteLine("COMPUTER CHOSE ROCK");
+                    break;
+
+                    case 2:
+                        inputCPU = "PAPER";
+                        Console.WriteLine("COMPUTER CHOSE PAPER");
+                    break;
+
+                    case 3:
+                        inputCPU = "SCISSORS";
+                        Console.WriteLine("COMPUTER CHOSE SCISSORS");
+                    break;
+                }
             }
         }
     }
