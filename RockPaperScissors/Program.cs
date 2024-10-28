@@ -86,6 +86,10 @@
                                 scoreCPU++;
                             }
                             break;
+
+                        default:
+                            Console.WriteLine("INVALID ENTRY. TRY AGAIN");
+                            break;
                     }
                 }
 
