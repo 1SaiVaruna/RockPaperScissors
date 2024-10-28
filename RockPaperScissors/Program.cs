@@ -29,16 +29,62 @@
                         case 1:
                             inputCPU = "ROCK";
                             Console.WriteLine("COMPUTER CHOSE ROCK");
+
+                            if (inputPlayer == "ROCK")
+                            {
+                                Console.WriteLine("DRAW!\n\n");
+                            }
+                            else if (inputPlayer == "PAPER")
+                            {
+                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                scorePlayer++;
+                            }
+                            else if (inputPlayer == "SCISSORS")
+                            {
+                                Console.WriteLine("CPU WINS!\n\n");
+                                scoreCPU++;
+                            }
+
                             break;
 
                         case 2:
                             inputCPU = "PAPER";
                             Console.WriteLine("COMPUTER CHOSE PAPER");
+
+                            if (inputPlayer == "ROCK")
+                            {
+                                Console.WriteLine("DRAW!\n\n");
+                            }
+                            else if (inputPlayer == "PAPER")
+                            {
+                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                scorePlayer++;
+                            }
+                            else if (inputPlayer == "SCISSORS")
+                            {
+                                Console.WriteLine("CPU WINS!\n\n");
+                                scoreCPU++;
+                            }
                             break;
 
                         case 3:
                             inputCPU = "SCISSORS";
                             Console.WriteLine("COMPUTER CHOSE SCISSORS");
+
+                            if (inputPlayer == "ROCK")
+                            {
+                                Console.WriteLine("DRAW!\n\n");
+                            }
+                            else if (inputPlayer == "PAPER")
+                            {
+                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                scorePlayer++;
+                            }
+                            else if (inputPlayer == "SCISSORS")
+                            {
+                                Console.WriteLine("CPU WINS!\n\n");
+                                scoreCPU++;
+                            }
                             break;
                     }
                 }
