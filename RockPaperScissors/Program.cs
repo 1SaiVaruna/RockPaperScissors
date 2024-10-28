@@ -4,9 +4,14 @@
     {
         static void Main(string[] args)
         {
+            Console.Title = "ROCK - PAPER - SCISSORS";
+            Console.WriteLine("WELCOME TO ROCK - PAPER - SCISSORS\n");
+            Console.WriteLine("- - - - - - - - - - - - - - - -");
+
             string inputCPU, inputPlayer;
             int randomInt;
             bool playAgain = true;
+
 
             while (playAgain)
             {
@@ -16,16 +21,12 @@
 
                 while (scoreCPU < 3 && scorePlayer < 3)
                 {
-                    Console.WriteLine("CHOOSE BETWEEN ROCK, PAPER and SCISSORS: ");
-                    inputPlayer = Console.ReadLine();
-                    inputPlayer = inputPlayer.ToUpper();
-
                     Random random = new Random();
                     randomInt = random.Next(1, 4);
 
                     while (true)
                     {
-                        Console.Write("Choose between ROCK, PAPER and SCISSORS: ");
+                        Console.Write("\nCHOOSE ROCK, PAPER OR SCISSORS: ");
                         inputPlayer = Console.ReadLine().ToUpper();
 
                         if (inputPlayer == "ROCK" || inputPlayer == "PAPER" || inputPlayer == "SCISSORS")
@@ -34,7 +35,7 @@
                         }
                         else
                         {
-                            Console.WriteLine("INVALID INPUT. PLEASE ENTER ROCK, PAPER or SCISSORS.\n");
+                            Console.WriteLine("\nINVALID INPUT.\n");
                         }
                     }
 
@@ -42,20 +43,20 @@
                     {
                         case 1:
                             inputCPU = "ROCK";
-                            Console.WriteLine("COMPUTER CHOSE ROCK");
+                            Console.WriteLine("\nCOMPUTER CHOSE ROCK");
 
                             if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("DRAW!\n\n");
+                                Console.WriteLine("\nDRAW!\n");
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("PLAYER WINS!\n\n");
+                                Console.WriteLine("\nPLAYER WINS!\n");
                                 scorePlayer++;
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
-                                Console.WriteLine("CPU WINS!\n\n");
+                                Console.WriteLine("\nCPU WINS!\n");
                                 scoreCPU++;
                             }
 
@@ -63,60 +64,61 @@
 
                         case 2:
                             inputCPU = "PAPER";
-                            Console.WriteLine("COMPUTER CHOSE PAPER");
+                            Console.WriteLine("\nCOMPUTER CHOSE PAPER");
 
                             if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("CPU WINS!\n\n");
+                                Console.WriteLine("\nCPU WINS!\n");
                                 scoreCPU++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("DRAW!\n\n");
+                                Console.WriteLine("\nDRAW!\n");
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
-                                Console.WriteLine("PLAYER WINS!\n\n");
+                                Console.WriteLine("\nPLAYER WINS!\n");
                                 scorePlayer++;
                             }
                             break;
 
                         case 3:
                             inputCPU = "SCISSORS";
-                            Console.WriteLine("COMPUTER CHOSE SCISSORS");
+                            Console.WriteLine("\nCOMPUTER CHOSE SCISSORS");
 
                             if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("PLAYER WINS!\n\n");
+                                Console.WriteLine("\nPLAYER WINS!\n");
                                 scorePlayer++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("CPU WINS!\n\n");
+                                Console.WriteLine("\nCPU WINS!\n");
                                 scoreCPU++;
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
-                                Console.WriteLine("DRAW!\n\n");
+                                Console.WriteLine("\nDRAW!\n");
                             }
                             break;
                     }
 
-                    Console.WriteLine("\n\nSCORES:\tPLAYER:\t{0}\tCPU:\t{1}", scorePlayer, scoreCPU);
+                    Console.WriteLine("SCORES [ PLAYER: {0} | CPU: {1} ]\n", scorePlayer, scoreCPU);
+                    Console.WriteLine("- - - - - - - - - - - - - - - -");
                 }
 
                 if (scorePlayer == 3)
                 {
-                    Console.WriteLine("Player WON!");
+                    Console.WriteLine("\nPLAYER WON!");
                 }
                 else if (scoreCPU == 3)
                 {
-                    Console.WriteLine("CPU WON!");
+                    Console.WriteLine("\nCPU WON!");
                 }
 
-                Console.WriteLine("WOULD YOU LIKE TO PLAY AGAIN (Y/N)");
-                string loop = Console.ReadLine();
-                playAgain = loop == "y";
+                Console.WriteLine("\nWOULD YOU LIKE TO PLAY AGAIN (Y/N)");
+                string loop = Console.ReadLine().ToUpper();
+                playAgain = loop == "Y";
                 if (playAgain) Console.Clear();
             }
         }
