@@ -36,7 +36,7 @@
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                Console.WriteLine("PLAYER WINS!\n\n");
                                 scorePlayer++;
                             }
                             else if (inputPlayer == "SCISSORS")
@@ -53,17 +53,17 @@
 
                             if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("DRAW!\n\n");
+                                Console.WriteLine("CPU WINS!\n\n");
+                                scoreCPU++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
-                                scorePlayer++;
+                                Console.WriteLine("DRAW!\n\n")
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
-                                Console.WriteLine("CPU WINS!\n\n");
-                                scoreCPU++;
+                                Console.WriteLine("PLAYER WINS!\n\n");
+                                scorePlayer++;
                             }
                             break;
 
@@ -73,17 +73,17 @@
 
                             if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("DRAW!\n\n");
+                                Console.WriteLine("PLAYER WINS!\n\n");
+                                scorePlayer++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
-                                scorePlayer++;
+                                Console.WriteLine("CPU WINS!\n\n");
+                                scoreCPU++;
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
-                                Console.WriteLine("CPU WINS!\n\n");
-                                scoreCPU++;
+                                Console.WriteLine("DRAW!\n\n")
                             }
                             break;
 
