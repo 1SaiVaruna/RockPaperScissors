@@ -18,6 +18,9 @@
             {
                 Console.WriteLine("CHOOSE BETWEEN ROCK, PAPER and SCISSORS: ");
                 inputPlayer = Console.ReadLine.ToUpper();
+
+                Random random = new Random();
+                randomInt = random.Next(1, 4);
             }
         }
     }
