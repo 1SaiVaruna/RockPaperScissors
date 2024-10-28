@@ -58,7 +58,7 @@
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("DRAW!\n\n")
+                                Console.WriteLine("DRAW!\n\n");
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
@@ -83,7 +83,7 @@
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
-                                Console.WriteLine("DRAW!\n\n")
+                                Console.WriteLine("DRAW!\n\n");
                             }
                             break;
 
