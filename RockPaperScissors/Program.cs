@@ -7,6 +7,12 @@
             string inputCPU, inputPlayer;
             int randomInt;
             bool playAgain = true;
+
+            while (playAgain)
+            {
+                int scoreCPU = 0;
+                int scorePlayer = 0;
+            }
         }
     }
 }
