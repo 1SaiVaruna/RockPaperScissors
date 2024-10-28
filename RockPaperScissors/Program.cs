@@ -13,6 +13,12 @@
                 int scoreCPU = 0;
                 int scorePlayer = 0;
             }
+
+            while (scoreCPU < 3 && scorePlayer < 3)
+            {
+                Console.WriteLine("CHOOSE BETWEEN ROCK, PAPER and SCISSORS: ");
+                inputPlayer = Console.ReadLine.ToUpper();
+            }
         }
     }
 }
