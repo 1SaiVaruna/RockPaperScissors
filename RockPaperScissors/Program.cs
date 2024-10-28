@@ -12,34 +12,36 @@
             {
                 int scoreCPU = 0;
                 int scorePlayer = 0;
-            }
-
-            while (scoreCPU < 3 && scorePlayer < 3)
-            {
-                Console.WriteLine("CHOOSE BETWEEN ROCK, PAPER and SCISSORS: ");
-                inputPlayer = Console.ReadLine.ToUpper();
-
-                Random random = new Random();
-                randomInt = random.Next(1, 4);
 
 
-                switch(randomInt)
+                while (scoreCPU < 3 && scorePlayer < 3)
                 {
-                    case 1: 
-                        inputCPU = "ROCK";
-                        Console.WriteLine("COMPUTER CHOSE ROCK");
-                    break;
+                    Console.WriteLine("CHOOSE BETWEEN ROCK, PAPER and SCISSORS: ");
+                    inputPlayer = Console.ReadLine.ToUpper();
 
-                    case 2:
-                        inputCPU = "PAPER";
-                        Console.WriteLine("COMPUTER CHOSE PAPER");
-                    break;
+                    Random random = new Random();
+                    randomInt = random.Next(1, 4);
 
-                    case 3:
-                        inputCPU = "SCISSORS";
-                        Console.WriteLine("COMPUTER CHOSE SCISSORS");
-                    break;
+
+                    switch (randomInt)
+                    {
+                        case 1:
+                            inputCPU = "ROCK";
+                            Console.WriteLine("COMPUTER CHOSE ROCK");
+                            break;
+
+                        case 2:
+                            inputCPU = "PAPER";
+                            Console.WriteLine("COMPUTER CHOSE PAPER");
+                            break;
+
+                        case 3:
+                            inputCPU = "SCISSORS";
+                            Console.WriteLine("COMPUTER CHOSE SCISSORS");
+                            break;
+                    }
                 }
+
             }
         }
     }
